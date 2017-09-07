@@ -5,10 +5,14 @@
   box-sizing: border-box;
 }
 
+/** HEADER **/
+
 header {
   background-color: #003666;
   line-height: 40px;
   color: white;
+  position: fixed;
+  width: 100%;
 }
 
 header img {
@@ -17,22 +21,6 @@ header img {
 
 #header h4 {
   padding-left: 20px;
-}
-
-#center {
-  text-align: center;
-  margin-top: 50px;
-  color: #003666;
-  margin-bottom: 40px;
-}
-
-#center h1 {
-  font-size: 70px;
-  margin: 0;
-}
-
-#center h4 {
-  margin: 0;
 }
 
 li {
@@ -50,16 +38,62 @@ li:hover {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/** EMPTY **/
+
+#empty {
+  background: white;
+  height: 70px;
+}
+
+/** CENTER **/
+
+#center {
+  text-align: center;
+  color: #003666;
+  margin-bottom: 30px;
+}
+
+#center h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+#center h4 {
+  margin: 0;
+}
+
+#center p {
+  color: #003666;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 3px;
+}
+
+/* RELEASES */
+
+#releases {
+  width: 1200px;
+  margin: auto;
+  background: #f6f6f5;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #f3f3f3;
+}
+
 h3 {
   color: #003666;
-  margin-left: 90px;
+  background: white;
 }
 
 #soundcloud {
   box-sizing: border-box;
   border-top: solid 2px #003666;
-  width: 1100px;
-  margin: auto;
+  width: 1200px;
   text-align: center;
 }
 
@@ -69,4 +103,20 @@ iframe {
   margin-right: 20px;
   margin-top: 10px;
   box-sizing: border-box;
+}
+
+/** FOOTER **/
+
+footer {
+  background: #f6f6f5;
+  text-align: center;
+  line-height: 35px;
+  border-top: solid 2px #f3f3f3;
+  color: #003666;
+  position: fixed;
+  width:100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  font-size: 0.8em;
 }
