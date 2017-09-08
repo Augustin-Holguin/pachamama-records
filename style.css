@@ -17,6 +17,7 @@ header {
   color: white;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 header img {
@@ -51,7 +52,7 @@ ul.dropdown-menu {
 }
 
 ul.dropdown-menu li {
-  background: #003666;
+  background: #004b79;
   color: white;
   width: 100%;
 }
@@ -78,7 +79,7 @@ ul li a {
   margin-left: 40px;
 }
 
-li:hover {
+header li:hover {
   color: #003666;
   background: white;
   font-weight: bold;
@@ -92,7 +93,7 @@ i {
 
 #empty {
   background: white;
-  height: 70px;
+  height: 75px;
 }
 
 /** CENTER **/
@@ -100,7 +101,7 @@ i {
 #center {
   text-align: center;
   color: #003666;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #center h1 {
@@ -119,20 +120,82 @@ i {
   margin-top: 3px;
 }
 
+/* CONTACT center */
+#contact-info {
+  text-align: center;
+}
+
+/* ARTISTS bio */
+
+#artist-bio {
+  text-align: center;
+  width: 1000px;
+  height: 500px;
+  background: #f6f6f5;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+#artist-bio img {
+  float: left;
+}
+
+h2 {
+  float: left;
+  font-size: 3.5em;
+  padding-left: 220px;
+  padding-top: 10px;
+  position: absolute;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  background: white;
+  border: solid 3px #ff8800;
+  border-radius: 5%;
+  color: #ff8800;
+  float: right;
+  position: absolute;
+  margin-left: 240px;
+  margin-top: 10px;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button:hover {
+  background: #ff8800;
+  font-weight: bold;
+}
+
+.bio ul li {
+  text-decoration: none;
+  display: block;
+  float: left;
+  padding-top: 75px;
+  padding-left: 225px;
+  list-style-type: none;
+  position: absolute;
+}
+
 /* RELEASES */
 
 #releases {
   width: 1200px;
   margin: auto;
   background: #f6f6f5;
-  margin-bottom: 50px;
   padding-bottom: 10px;
   border-bottom: solid 2px #f3f3f3;
+  margin-bottom: 45px;
 }
 
 h3 {
   color: #003666;
   background: white;
+  padding-bottom: 4px;
 }
 
 #soundcloud {
@@ -146,8 +209,18 @@ iframe {
   margin: auto;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 10px;
+  margin-top: 14px;
   box-sizing: border-box;
+}
+
+/** INDEX Description **/
+
+#label-descr {
+  margin-bottom: 80px;
+}
+
+#label-descr p {
+  text-align: center;
 }
 
 /** FOOTER **/
