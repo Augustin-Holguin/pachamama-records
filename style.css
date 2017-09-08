@@ -5,11 +5,15 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height:100%;
+  position: relative;
+}
+
 /** HEADER **/
 
 header {
   background-color: #003666;
-  line-height: 40px;
   color: white;
   position: fixed;
   width: 100%;
@@ -19,13 +23,55 @@ header img {
   position: fixed;
 }
 
-#header h4 {
-  padding-left: 20px;
+nav {
+  text-align: center;
 }
 
-li {
-  display: inline-block;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
   padding: 0px 15px;
+  position: relative;
+  cursor: pointer;
+  line-height: 40px;
+  height: 40px;
+}
+
+ul.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+}
+
+ul.dropdown-menu li {
+  background: #003666;
+  color: white;
+  width: 100%;
+}
+
+ul.dropdown-menu li:hover {
+  background: #ff8800;
+  font-weight: normal;
+}
+
+ul.dropdown-menu li {
+  display: none;
+}
+
+li:hover > ul.dropdown-menu li {
+  display: block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #title {
@@ -36,25 +82,6 @@ li:hover {
   color: #003666;
   background: white;
   font-weight: bold;
-}
-
-ul.dropdown {
-  position: absolute;
-}
-
-ul.dropdown li{
-  display: none;
-}
-
-li:hover > ul.dropdown li {
-  display: block;
-  background: #f6f6f5;
-  border-bottom: solid 2px #9f9fa3;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 i {
@@ -126,15 +153,14 @@ iframe {
 /** FOOTER **/
 
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: #f6f6f5;
   text-align: center;
   line-height: 35px;
   border-top: solid 2px #f3f3f3;
   color: #003666;
-  position: fixed;
-  width:100%;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
   font-size: 0.8em;
 }

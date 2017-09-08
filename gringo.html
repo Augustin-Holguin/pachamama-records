@@ -2,6 +2,7 @@
 
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Gringo - Pachamama Records</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Images/tablogo.ico">
@@ -11,12 +12,26 @@
 
     <header>
       <img src="Images/tablogo.png" width="40px"/>
-      <li id="title"><a href="index.html">Pachamama Records</a></li>
-      <li>
-        Artists
-      </li>
-      <li>Contact</li>
+      <nav>
+        <ul>
+          <li id="title"><a href="index.html">Pachamama Records</a></li>
+          <li>Artists
+            <ul class="dropdown-menu">
+              <li>Gringo</li>
+              <li><a href="gus.html">Gus</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://soundcloud.com/pachamamarecords" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
     </header>
+
+    <footer>
+      <p>
+        Design & Development by Augustin Holguin
+      </p>
+    </footer>
 
   </body>
 </html>
